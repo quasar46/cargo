@@ -1,0 +1,39 @@
+.footer {
+    position: relative;
+    z-index: 10;
+    background-color: $color-grey;
+    padding: 45px 0;
+    a,
+    p {
+        color: $color-white;
+    }
+    a {
+        font-size: 21px;
+        &:hover {
+            color: $color-red;
+            transition: all 0.3s ease-out;
+        }
+        @media (max-width: 1365px) {
+            font-size: 18px;
+        }
+        @media (max-width: 1023px) {
+            font-size: 17px;
+        }
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+}
+
+.footer__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}

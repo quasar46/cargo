@@ -1,0 +1,5 @@
+.content-hidden {
+    &.show {
+        -webkit-line-clamp: inherit;
+    }
+}

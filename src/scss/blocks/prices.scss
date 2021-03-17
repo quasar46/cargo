@@ -1,0 +1,102 @@
+.prices {
+    position: relative;
+    &:nth-child(2n) {
+        .prices__title {
+            margin-left: auto;
+            @media (max-width: 767px) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.prices__title {
+    width: 50%;
+    margin-bottom: 150px;
+}
+
+.prices__title {
+    margin-bottom: 50px;
+    @media (max-width: 1365px) {
+        margin-bottom: 37px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
+.prices__table {
+    overflow: auto;
+    padding-bottom: 120px;
+    &.container {
+        position: static;
+    }
+    table {
+        width: 100%;
+        // margin-bottom: 260px;
+        background-color: #fff;
+        td {
+            border: 1px solid #d9d9d9;
+            padding: 24px 50px;
+            &:first-child {
+                font-size: 18px;
+                @media (max-width: 1919px) {
+                    font-size: 17px;
+                }
+                @media (max-width: 1365px) {
+                    font-size: 16px;
+                }
+                @media (max-width: 1023px) {
+                    font-size: 16px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
+            }
+            &:last-child {
+                font-size: 32px;
+                font-weight: 700;
+                text-align: right;
+                text-transform: uppercase;
+                width: calc(100% / 4);
+                background-color: #e6e6e6;
+                border-bottom: 1px solid #fff;
+                padding-right: 90px;
+
+                @media (max-width: 1919px) {
+                    font-size: 30px;
+                    padding-right: 45px;
+                }
+                @media (max-width: 1365px) {
+                    font-size: 26px;
+                }
+                @media (max-width: 1023px) {
+                    font-size: 22px;
+                    padding-right: 25px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 22px;
+                    white-space: nowrap;
+                    padding-right: 20px;
+                }
+            }
+            @media (max-width: 1365px) {
+                padding: 20px 30px;
+            }
+            @media (max-width: 1023px) {
+                padding: 19px 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            // width: 374px;
+            width: 100%;
+        }
+        @media (max-width: 370px) {
+            width: 374px;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 220px;
+    }
+}

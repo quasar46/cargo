@@ -1,0 +1,125 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+
+        .main-lines-wrapper.container 
+            span 
+            span 
+            span 
+
+        //- first-section
+        .first-section.first-section--inner
+            //- burger-menu
+            include modules/burger-menu.pug
+            //- header
+            header.header#header
+                .container 
+                    .header__wrapper.wrapper-header 
+                        include modules/main-menu.pug
+                        a(href="tel:89107401708").wrapper-header__phone +7 (910) 740-17-08
+                        button.wrapper-header__burger.burger 
+
+            //- hero
+            .hero 
+                .container
+                    h1.hero__title Цены
+                    a.hero__feedback#modal-show Обратный звонок
+
+        //- prices
+        .prices
+            .container 
+                h2.prices__title.title-inner Грузовой ремонт
+            .prices__table.container
+                table
+                    tr
+                        td Автомобили легковые до 1500 кг
+                        td от 1 300 ₽
+                    tr
+                        td Автомобили легковые более 1500 кг
+                        td от 1 500 ₽
+                    tr
+                        td Эвакуация с заблокированными колесами (доплата за 1 колесо)
+                        td от 300 ₽
+                div
+                    table(hidden)
+                        tr
+                            td Автомобили легковые до 1500 кг
+                            td от 1 300 ₽
+                        tr
+                            td Автомобили легковые более 1500 кг
+                            td от 1 500 ₽
+                        tr
+                            td Эвакуация с заблокированными колесами (доплата за 1 колесо)
+                            td от 300 ₽
+
+                    button.press-down 
+                        img(src="images/icons/arrow-down.svg" alt="")
+
+        //- prices
+        .prices
+            .container 
+                h2.prices__title.title-inner Ремонт спецтехники
+            .prices__table.container
+                table
+                    tr
+                        td Автомобили легковые до 1500 кг
+                        td от 1 300 ₽
+                    tr
+                        td Автомобили легковые более 1500 кг
+                        td от 1 500 ₽
+                    tr
+                        td Эвакуация с заблокированными колесами (доплата за 1 колесо)
+                        td от 300 ₽
+                div
+                    table(hidden)
+                        tr
+                            td Автомобили легковые до 1500 кг
+                            td от 1 300 ₽
+                        tr
+                            td Автомобили легковые более 1500 кг
+                            td от 1 500 ₽
+                        tr
+                            td Эвакуация с заблокированными колесами (доплата за 1 колесо)
+                            td от 300 ₽
+
+                    button.press-down 
+                        img(src="images/icons/arrow-down.svg" alt="")
+
+        //- prices
+        .prices
+            .container 
+                h2.prices__title.title-inner Ремонт гидравлики
+            .prices__table.container
+                table
+                    tr
+                        td Автомобили легковые до 1500 кг
+                        td от 1 300 ₽
+                    tr
+                        td Автомобили легковые более 1500 кг
+                        td от 1 500 ₽
+                    tr
+                        td Эвакуация с заблокированными колесами (доплата за 1 колесо)
+                        td от 300 ₽
+                div
+                    table(hidden)
+                        tr
+                            td Автомобили легковые до 1500 кг
+                            td от 1 300 ₽
+                        tr
+                            td Автомобили легковые более 1500 кг
+                            td от 1 500 ₽
+                        tr
+                            td Эвакуация с заблокированными колесами (доплата за 1 колесо)
+                            td от 300 ₽
+
+                    button.press-down 
+                        img(src="images/icons/arrow-down.svg" alt="")
+
+        include modules/footer.pug
+
+        //- modal
+        include modules/modal.pug
+
+    include modules/script.pug

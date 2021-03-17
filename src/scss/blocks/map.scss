@@ -1,0 +1,27 @@
+.map {
+    height: 428px;
+    margin-bottom: 150px;
+    @media (max-width: 1919px) {
+        height: 320px;
+        margin-bottom: 130px;
+    }
+    @media (max-width: 1365px) {
+        height: 279px;
+        margin-bottom: 120px;
+    }
+    @media (max-width: 767px) {
+        height: 292px;
+        margin-bottom: 100px;
+    }
+}
+
+.map__container {
+    height: 100%;
+}
+
+.map__wrapper {
+    background-image: url("../images/map.jpg");
+    background-size: cover;
+    height: 100%;
+    display: flex;
+}

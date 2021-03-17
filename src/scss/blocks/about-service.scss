@@ -1,0 +1,138 @@
+.about-service {
+    position: relative;
+    margin-bottom: 150px;
+    @media (max-width: 1919px) {
+        margin-bottom: 133px;
+    }
+    @media (max-width: 1365px) {
+        margin-bottom: 120px;
+    }
+}
+
+.about-service__gradient {
+    position: absolute;
+    width: 605px;
+    height: 100%;
+    background-image: url("../images/gradients/gradient2.svg");
+    background-size: cover;
+    top: 0;
+    right: 0;
+    @media (max-width: 1919px) {
+        width: 416px;
+    }
+    @media (max-width: 1365px) {
+        width: 280px;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.about-service__wrapper {
+    width: 50%;
+    p {
+        line-height: 1.4;
+        font-weight: 300;
+        padding-bottom: 60px;
+        @media (max-width: 1919px) {
+            font-size: 17px;
+            padding-bottom: 40px;
+        }
+        @media (max-width: 1365px) {
+            font-size: 16px;
+            padding-bottom: 30px;
+            line-height: 1.5;
+        }
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+    h3 {
+        font-size: 21px;
+        font-weight: 500;
+        padding-bottom: 30px;
+        @media (max-width: 1365px) {
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+    ul {
+        display: flex;
+        margin-bottom: 25px;
+        li {
+            display: flex;
+            flex-direction: column;
+            width: 260px;
+            margin-right: 110px;
+            p {
+                padding-bottom: 0;
+            }
+            &:last-child {
+                margin-left: auto;
+            }
+            @media (max-width: 1919px) {
+                margin-right: 45px;
+            }
+            @media (max-width: 767px) {
+                width: 50%;
+                margin-right: 0;
+            }
+        }
+        p {
+            position: relative;
+            padding-top: 20px;
+            line-height: 1.5;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background-color: $color-red;
+            }
+            @media (max-width: 1919px) {
+                padding-top: 10px;
+            }
+        }
+        @media (max-width: 1365px) {
+            margin-bottom: 20px;
+        }
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.about-service__title {
+    margin-bottom: 40px;
+}
+
+p.about-service__bottom-text {
+    font-size: 21px;
+    font-weight: 500;
+    padding-bottom: 0;
+    @media (max-width: 1919px) {
+        font-size: 19px;
+    }
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+p.about-service__content {
+    @media (max-width: 767px) {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+}

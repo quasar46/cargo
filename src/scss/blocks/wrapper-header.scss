@@ -1,0 +1,109 @@
+.wrapper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-header__menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 auto;
+    margin-right: 100px;
+    & > li {
+        position: relative;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        .submenu {
+            position: absolute;
+            top: 100%;
+            left: -30px;
+            background-color: rgba(51, 51, 51, 0.5);
+            padding: 30px;
+            width: 235px;
+            z-index: 20;
+            li {
+                padding-bottom: 20px;
+                &:last-child {
+                    padding-bottom: 0;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            font-size: 18px;
+            text-decoration: underline;
+            color: $color-white;
+            &:hover,
+            &:active,
+            &:focus,
+            &.active {
+                color: $color-red;
+                transition: all 0.3s ease-out;
+            }
+        }
+        &:hover {
+            .submenu {
+                display: block;
+            }
+        }
+    }
+    @media (max-width: 1919px) {
+        display: none;
+    }
+}
+
+.wrapper-header__phone {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    text-decoration: underline;
+    color: $color-white;
+    height: 67px;
+    padding-left: 30px;
+    padding-right: 70px;
+    background-image: url("../images/icons/arrow-next.svg");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    border: 2px solid $color-white;
+    border-radius: 40px;
+    &:hover {
+        color: $color-red;
+        border-color: $color-red;
+        transition: all 0.3s ease-out;
+        background-image: url("../images/icons/arrow-next-red.svg");
+    }
+    &.active {
+        @media (max-width: 1365px) {
+            color: #000;
+            border-color: #000;
+            background-image: url("../images/icons/arrow-next-black.svg");
+        }
+    }
+    @media (max-width: 1919px) {
+        font-size: 19px;
+        height: 60px;
+    }
+    @media (max-width: 1365px) {
+        font-size: 18px;
+        height: 57px;
+        padding-right: 56px;
+    }
+    @media (max-width: 1023px) {
+        font-size: 17px;
+    }
+    @media (max-width: 767px) {
+        font-size: 14px;
+        padding-right: 45px;
+        padding-left: 15px;
+        background-size: 15px auto;
+        height: 42px;
+    }
+}

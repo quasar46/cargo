@@ -1,0 +1,69 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+
+        .main-lines-wrapper.container 
+            span 
+            span 
+            span 
+
+        //- first-section
+        .first-section.first-section--inner
+            //- burger-menu
+            include modules/burger-menu.pug
+            //- header
+            header.header#header
+                .container 
+                    .header__wrapper.wrapper-header 
+                        include modules/main-menu.pug
+                        a(href="tel:89107401708").wrapper-header__phone +7 (910) 740-17-08
+                        button.wrapper-header__burger.burger 
+
+            //- hero
+            .hero 
+                .container
+                    h1.hero__title Контакты
+                    a.hero__feedback#modal-show Обратный звонок
+
+        //- find
+        .find
+            .find__container.container
+                .find__gradient
+                .find__wrapper.wrapper-find
+
+                    h2.wrapper-find__title.title-inner Как нас найти
+                    p г.Курск, <i class="br"></i> ул. Кирпичная, 21 А
+                    a(href="tel:89107401708") +7 (910) 740-17-08
+                    .wrapper-find__contacts 
+                        div     
+                            a(href="mailto:adres@yandex.ru") adres@yandex.ru
+                        div
+                            a(href="http://adressaita.ru") adressaita.ru
+
+        //- map                
+        .map 
+            .map__container.container 
+                .map__wrapper
+                    <div style="position:relative;overflow:hidden; flex: 1 0 auto"><a href="https://yandex.ru/maps/8/kursk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Курск</a><a href="https://yandex.ru/maps/8/kursk/house/kirpichnaya_ulitsa_21/Z08YdwFmTEMOQFtrfXt4eXlhZA==/?ll=36.166568%2C51.798520&utm_medium=mapframe&utm_source=maps&z=17.17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Кирпичная улица, 21 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUQyPWI-A" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+        //- times
+        .times 
+            .times__container.container 
+                .times__row 
+                    p Пн-Пт
+                    p с 9:00 до 21:00
+                .times__row 
+                    p Вс
+                    p выходной
+
+        //- feedback
+        include modules/feedback.pug
+
+        include modules/footer.pug
+
+        //- modal
+        include modules/modal.pug
+
+    include modules/script.pug

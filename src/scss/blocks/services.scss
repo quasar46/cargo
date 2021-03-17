@@ -1,0 +1,196 @@
+.services {
+    position: relative;
+    margin-bottom: 200px;
+    overflow: hidden;
+
+    @media (max-width: 1919px) {
+        margin-bottom: 180px;
+    }
+    @media (max-width: 1365px) {
+        margin-bottom: 170px;
+    }
+    @media (max-width: 1023px) {
+        margin-bottom: 101px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 101px;
+    }
+}
+
+.services__title {
+    margin-left: 50%;
+    margin-bottom: 70px;
+    max-width: 700px;
+    @media (max-width: 1919px) {
+        max-width: 470px;
+        margin-bottom: 80px;
+    }
+    @media (max-width: 1365px) {
+        margin-bottom: 70px;
+    }
+    @media (max-width: 1023px) {
+        margin-bottom: 57px;
+    }
+    @media (max-width: 767px) {
+        margin-left: 15px;
+        margin-bottom: 24px;
+    }
+}
+
+.services__slider {
+    max-width: 1380px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: -20px;
+    padding-bottom: 65px;
+    .slick-track {
+        display: flex;
+    }
+    .slick-arrow {
+        position: absolute;
+        width: 79px;
+        height: 67px;
+        z-index: 1;
+        top: 100%;
+        background-repeat: no-repeat;
+    }
+    .slick-prev {
+        background-image: url("../images/icons/arrow-prev-slider.svg");
+    }
+    .slick-next {
+        background-image: url("../images/icons/arrow-next-slider.svg");
+    }
+    .slick-slide {
+        height: auto;
+    }
+    .slick-list {
+        padding: 20px;
+    }
+    @media (max-width: 1919px) {
+        max-width: 1250px;
+        margin-right: -222px;
+        padding-bottom: 65px;
+    }
+    @media (max-width: 1365px) {
+        margin-bottom: 40px;
+        padding-bottom: 0;
+        margin-right: -267px;
+        width: calc(100vw + 105px) !important;
+    }
+    @media (max-width: 1023px) {
+        width: calc(100vw + 187px) !important;
+        margin-right: -311px;
+    }
+    @media (max-width: 767px) {
+        width: calc(100vw + 120px) !important;
+        margin-right: -183px;
+        margin-bottom: 18px;
+    }
+}
+
+.services__container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 75px;
+    // .slider-arrows,
+    // .slider-arrows2,
+    .sl-count {
+        display: flex;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        color: $color-red;
+        font-weight: 500;
+        width: 162px;
+        height: 162px;
+        border-radius: 50%;
+        justify-content: center;
+        @media (max-width: 1919px) {
+            width: 146px;
+            height: 146px;
+        }
+        @media (max-width: 1365px) {
+            width: 114px;
+            height: 114px;
+        }
+        @media (max-width: 1023px) {
+            width: 97px;
+            height: 97px;
+        }
+        @media (max-width: 767px) {
+            width: 55px;
+            height: 55px;
+            margin: 0 auto;
+            border: 1px solid #d9d9d9;
+        }
+    }
+    @media (max-width: 1919px) {
+        padding-bottom: 68px;
+    }
+    @media (max-width: 1365px) {
+        padding-bottom: 70px;
+    }
+    @media (max-width: 1023px) {
+        padding-bottom: 61px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+    }
+}
+
+.sl-count__current,
+.sl-count__current2,
+.sl-count__slesh {
+    font-size: 55px;
+    @media (max-width: 1919px) {
+        font-size: 50px;
+    }
+    @media (max-width: 1365px) {
+        font-size: 45px;
+    }
+    @media (max-width: 1023px) {
+        font-size: 38px;
+    }
+    @media (max-width: 1023px) {
+        font-size: 22px;
+    }
+}
+
+.sl-count__total,
+.sl-count__total2 {
+    font-size: 21px;
+    @media (max-width: 1919px) {
+        font-size: 19px;
+    }
+    @media (max-width: 1365px) {
+        font-size: 18px;
+    }
+    @media (max-width: 1023px) {
+        font-size: 15px;
+    }
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.services__gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 605px;
+    height: 100%;
+    background-image: url("../images/gradients/gradient2.svg");
+    background-size: cover;
+    @media (max-width: 1919px) {
+        width: 417px;
+    }
+    @media (max-width: 1365px) {
+        width: 281px;
+    }
+    @media (max-width: 1023px) {
+        width: 210px;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+}

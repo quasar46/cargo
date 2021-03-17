@@ -1,0 +1,192 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+
+        .main-lines-wrapper.container 
+            span 
+            span 
+            span 
+        //- first-section
+        .first-section
+            //- burger-menu
+            include modules/burger-menu.pug
+            //- header
+            header.header#header
+                .container 
+                    .header__wrapper.wrapper-header 
+                        include modules/main-menu.pug
+                        a(href="tel:89107401708").wrapper-header__phone +7 (910) 740-17-08
+                        button.wrapper-header__burger.burger 
+
+            //- hero
+            .hero 
+                .container
+                    h1.hero__title Грузовой Сервис в Курске
+                    .hero__bottom 
+                        p
+                            a(href="/").mode.mode--1
+                                span Ремонт<i class="br"></i> пневматических<i class="br"></i> систем (WABCO)
+                        p
+                            a.mode.mode--2#modal-show-order
+                                span Заказ эвакуаторов
+
+        //- services
+        .services 
+            .services__gradient
+            h2.services__title.title-inner Услуги грузового автосервиса
+            .services__slider.slider-services.slider
+                a(href="").slider-services__item
+                    img(src="images/services/item1.jpg" alt="")
+                    p Буксировка грузового автомобиля без груза
+                a(href="").slider-services__item
+                    img(src="images/services/item2.jpg" alt="")
+                    p Техническое обслуживание, ремонт прицепов
+                a(href="").slider-services__item
+                    img(src="images/services/item1.jpg" alt="")
+                    p Буксировка грузового автомобиля без груза
+                a(href="").slider-services__item
+                    img(src="images/services/item1.jpg" alt="")
+                    p Буксировка грузового автомобиля без груза
+            .services__container.container
+                div.sl-count
+                    .sl-count__inner
+                        span.sl-count__current 1
+                        span.sl-count__slesh /
+                        span.sl-count__total
+
+
+                .slider-arrows
+
+            //- ul.services__slider.slider-services.slider
+            //-     li.slider-services__item
+            //-         a(href="") 
+            //-             img(src="images/services/item1.jpg" alt="")
+            //-             p Буксировка грузового автомобиля без груза
+            //-     li.slider-services__item
+            //-         a(href="") 
+            //-             img(src="images/services/item2.jpg" alt="")
+            //-             p Техническое обслуживание, ремонт прицепов
+            //-     li.slider-services__item
+            //-         a(href="") 
+            //-             img(src="images/services/item1.jpg" alt="")
+            //-             p Буксировка грузового автомобиля без груза
+            //-     li.slider-services__item
+            //-         a(href="") 
+            //-             img(src="images/services/item1.jpg" alt="")
+            //-             p Буксировка грузового автомобиля без груза
+            //- .services__container.container
+            //-     span.slider__counter
+            //-     .slider-arrows
+
+        //- advantages
+        .advantages 
+            .advantages__list.list-advantages
+                .list-advantages__wrapper
+                    .container 
+                        ul
+                            li.list-advantages__item.item-advantages
+                                .list-advantages__pic
+                                    img(src="images/icons/advantages/item1.svg" alt="")
+                                .item-advantages.item-advantages__content
+                                    h3 Первый
+                                    p эвакуатор в городе Курске
+                            li.list-advantages__item.item-advantages
+                                .list-advantages__pic
+                                    img(src="images/icons/advantages/item2.svg" alt="")
+                                .item-advantages.item-advantages__content
+                                    h3 С 2005
+                                    p года ведем свою деятельнсть
+                            li.list-advantages__item.item-advantages
+                                .list-advantages__pic
+                                    img(src="images/icons/advantages/item3.svg" alt="")
+                                .item-advantages.item-advantages__content
+                                    h3 Качество
+                                    p всегда ведем свою деятельность
+                            li.list-advantages__item.item-advantages
+                                .list-advantages__pic
+                                    img(src="images/icons/advantages/item4.svg" alt="")
+                                .item-advantages.item-advantages__content
+                                    h3 > 20
+                                    p профессиональных сотрудников
+
+        //- about
+        .about 
+            .about__top.top-about
+                .top-about__gradient
+                .container
+                    h2.top-about__title.title-inner О компании
+                    p.top-about__text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. 
+                    a(href="/").top-about__more Подробнее
+                        img(src="images/icons/arrow-next-slider.svg" alt="") 
+            .container
+                .about__middle.middle-about
+                .about__bottom.bottom-about
+                    .bottom-about__content
+                        p.bottom-about__col-left 1560 &#8381
+                        p.bottom-about__col-right за нормо-час
+                    .bottom-about__content
+                        p.bottom-about__col-left 1 год
+                        p.bottom-about__col-right гарантия на все услуги
+
+        //- service
+        .maintenance 
+            .maintenance__gradient
+            h2.maintenance__title.title-inner Обслуживаем марки
+            ul.maintenance___slider.slider-maintenance.slider
+                li.slider-maintenance___item
+                    img(src="images/icons/maintenance/item1.png" alt="")
+                li.slider-maintenance___item
+                    img(src="images/icons/maintenance/item2.png" alt="")
+                li.slider-maintenance___item
+                    img(src="images/icons/maintenance/item3.png" alt="")
+                li.slider-maintenance___item
+                    img(src="images/icons/maintenance/item4.png" alt="")
+                li.slider-maintenance___item
+                    img(src="images/icons/maintenance/item5.png" alt="")
+                li.slider-maintenance___item
+                    img(src="images/icons/maintenance/item1.png" alt="")
+                li.slider-maintenance___item
+                    img(src="images/icons/maintenance/item2.png" alt="")
+                li.slider-maintenance___item
+                    img(src="images/icons/maintenance/item3.png" alt="")
+                li.slider-maintenance___item
+                    img(src="images/icons/maintenance/item4.png" alt="")
+                li.slider-maintenance___item
+                    img(src="images/icons/maintenance/item5.png" alt="")
+            .services__container.container
+                div.sl-count
+                    .sl-count__inner
+                        span.sl-count__current2 1
+                        span.sl-count__slesh /
+                        span.sl-count__total2
+                .slider-arrows2
+
+        //- actions        
+        .actions
+            ul.container
+                li
+                    p Эвакуаторы
+                    .actions__picture.actions__picture--mode(style="background-image:url('images/icons/actions/evakuatory.svg')")
+                li
+                    p Ремонт
+                    .actions__picture(style="background-image:url('images/icons/actions/remont.svg')")
+                li
+                    p Тахографы
+                    .actions__picture(style="background-image:url('images/icons/actions/tahograf.svg')")
+                li
+                    p Диагностика
+                    .actions__picture(style="background-image:url('images/icons/actions/dyadnostika.svg')")
+
+        //- feedback
+        include modules/feedback.pug
+
+        //- footer
+        include modules/footer.pug
+
+        //- modal--order
+        include modules/modal-order.pug
+
+
+    include modules/script.pug

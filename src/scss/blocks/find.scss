@@ -1,0 +1,35 @@
+.find {
+    margin-top: 280px;
+    margin-bottom: 70px;
+    @media (max-width: 1919px) {
+        margin-top: 226px;
+    }
+    @media (max-width: 1365px) {
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+}
+
+.find__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.find__gradient {
+    position: absolute;
+    width: 605px;
+    height: 100%;
+    background-image: url("../images/gradients/gradient2.svg");
+    background-size: cover;
+    top: 0;
+    left: 0;
+    @media (max-width: 1919px) {
+        width: 417px;
+    }
+    @media (max-width: 1365px) {
+        width: 280px;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+}

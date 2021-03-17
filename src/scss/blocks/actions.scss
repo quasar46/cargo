@@ -1,0 +1,92 @@
+.actions {
+    position: relative;
+    z-index: 10;
+    background-color: $color-grey;
+    padding: 50px 0;
+    margin-bottom: 150px;
+    // height: 167px;
+    display: flex;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        li {
+            display: flex;
+            align-items: center;
+            .actions__picture {
+                width: 142px;
+                background-color: $color-white;
+                border-radius: 40px;
+                height: 67px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 55%;
+                &--mode {
+                    background-size: 45%;
+                }
+                @media (max-width: 1919px) {
+                    max-width: 115px;
+                }
+                @media (max-width: 1365px) {
+                    height: 54px;
+                }
+                @media (max-width: 767px) {
+                    height: 45px;
+                    max-width: 95px;
+                }
+            }
+            &:hover {
+                p {
+                    color: $color-red;
+                }
+            }
+            @media (max-width: 1365px) {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            font-size: 21px;
+            font-weight: 500;
+            color: $color-white;
+            margin-right: 30px;
+            text-decoration: underline;
+            @media (max-width: 1919px) {
+                font-size: 19px;
+            }
+            @media (max-width: 1365px) {
+                margin-right: 15px;
+            }
+            @media (max-width: 1023px) {
+                font-size: 17px;
+            }
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 1365px) {
+            flex-wrap: wrap;
+            margin-bottom: -30px;
+        }
+        @media (max-width: 767px) {
+        }
+    }
+    @media (max-width: 1919px) {
+        margin-bottom: 130px;
+    }
+    @media (max-width: 1365px) {
+        margin-bottom: 120px;
+    }
+    @media (max-width: 1023px) {
+        margin-bottom: 101px;
+    }
+    @media (max-width: 767px) {
+        padding: 40px 0;
+        padding-bottom: 55px;
+    }
+}

@@ -1,0 +1,16 @@
+.about {
+    position: relative;
+    margin: 150px 0;
+    @media (max-width: 1919px) {
+        margin: 130px 0;
+    }
+    @media (max-width: 1365px) {
+        margin: 120px 0;
+    }
+    @media (max-width: 1023px) {
+        margin: 103px 0;
+    }
+    @media (max-width: 767px) {
+        margin: 97px 0;
+    }
+}

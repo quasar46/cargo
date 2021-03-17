@@ -1,0 +1,107 @@
+.table-prices {
+    margin-bottom: 150px;
+    p {
+        display: flex;
+        align-items: center;
+        border: 1px solid #e6e6e6;
+        background-color: #fff;
+        span {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .col {
+            flex: 1 0 auto;
+            flex: 1 1;
+            display: block;
+            &:first-child {
+                padding: 24px 50px;
+            }
+            @media (max-width: 1919px) {
+                font-size: 17px;
+            }
+            @media (max-width: 1365px) {
+                font-size: 16px;
+                padding: 0 30px;
+            }
+            @media (max-width: 767px) {
+                font-size: 14px;
+                padding: 20px;
+            }
+        }
+        .col:last-child {
+            display: flex;
+            max-width: 354px;
+            background-color: #e6e6e6;
+            justify-content: flex-end;
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: 700;
+            border-bottom: 1px solid #fff;
+            padding-right: 90px;
+            @media (max-width: 1919px) {
+                font-size: 30px;
+                max-width: calc(100% / 4);
+                padding-right: 50px;
+            }
+            @media (max-width: 1365px) {
+                font-size: 26px;
+                padding-right: 45px;
+                padding-left: 0;
+            }
+            @media (max-width: 767px) {
+                font-size: 22px;
+                max-width: 155px;
+            }
+        }
+        &.hide {
+            display: none;
+            &.show {
+                display: flex;
+            }
+        }
+        @media (max-width: 1365px) {
+            height: 56px;
+        }
+        @media (max-width: 767px) {
+            width: 374px;
+        }
+    }
+    @media (max-width: 1919px) {
+        margin-bottom: 124px;
+    }
+    @media (max-width: 1365px) {
+        margin-bottom: 107px;
+    }
+}
+
+.press-down {
+    max-width: 80px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    &.current {
+        transform: rotate(180deg);
+        @media (max-width: 767px) {
+            transform: translateX(-50%) rotate(180deg) !important;
+            // bottom: 100px;
+        }
+    }
+    @media (max-width: 1365px) {
+        max-width: 55px;
+        margin-top: 30px;
+    }
+    @media(max-width: 1023px) {
+        margin-top: 20px;
+    }
+    @media (max-width: 767px) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 55px;
+    }
+}

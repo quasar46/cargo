@@ -1,0 +1,21 @@
+.burger {
+    display: none;
+    position: relative;
+    width: 73px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    z-index: 20;
+    background-image: url("../images/icons/burger.svg");
+    background-repeat: no-repeat;
+    &.active {
+        background-image: url("../images/icons/burger-active.svg");
+    }
+    @media (max-width: 1919px) {
+        display: flex;
+    }
+    @media (max-width: 767px) {
+        height: 42px;
+        width: 50px;
+    }
+}

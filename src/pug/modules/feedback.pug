@@ -1,0 +1,18 @@
+.feedback 
+    .container
+        h2.feedback__title.title-inner Свяжитесь с нами
+        form(action="get").feedback__form.form-feedback
+            .form-feedback__wrapper
+                .wrapper-feedback
+                    .wrapper-feedback__block
+                        p
+                            input(type="text" placeholder="Имя")
+                        p
+                            input(type="text" placeholder="Телефон")
+                    .wrapper-feedback__block
+                        p 
+                            textarea(placeholder="Комментарий")
+                p.form-feedback__personal Нажимая отправить, вы даете согласие на обработку <a href="/">персональных данных</a>
+            .form-feedback__submit
+                input(type="submit" value="")
+    .feedback__gradient

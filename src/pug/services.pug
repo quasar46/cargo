@@ -1,0 +1,84 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+
+        .main-lines-wrapper.container 
+            span 
+            span 
+            span 
+
+        //- first-section
+        .first-section.first-section--inner
+            //- burger-menu
+            include modules/burger-menu.pug
+            //- header
+            header.header#header
+                .container 
+                    .header__wrapper.wrapper-header 
+                        include modules/main-menu.pug
+                        a(href="tel:89107401708").wrapper-header__phone +7 (910) 740-17-08
+                        button.wrapper-header__burger.burger 
+
+            //- hero
+            .hero 
+                .container
+                    h1.hero__title Услуги
+                    a.hero__feedback#modal-show Обратный звонок
+
+        //- services-main
+        .services-main 
+            .services-main__container.container 
+                .services-main__wrapper.wrapper-services-main 
+                    .wrapper-services-main__item
+                        .wrapper-services-main__inner 
+                            img(src="images/services-page/item1.jpg" alt="")
+                            p.wrapper-services-main__title Буксировка грузового автомобиля без груза
+                    .wrapper-services-main__item
+                        .wrapper-services-main__inner
+                            img(src="images/services-page/item2.jpg" alt="")
+                            p Техническое обслуживание, ремонт прицепов.
+                    .wrapper-services-main__item
+                        .wrapper-services-main__inner.wrapper-services-main__inner--mode
+                            img(src="images/services-page/item3.jpg" alt="")
+                            p Техническое обслуживание, ремонт прицепов.
+                    .wrapper-services-main__item
+                        .wrapper-services-main__inner.wrapper-services-main__inner--mode
+                            img(src="images/services-page/item4.jpg" alt="")
+                            p Техническое обслуживание, ремонт прицепов.
+                    .wrapper-services-main__item
+                        .wrapper-services-main__inner
+                            img(src="images/services-page/item5.jpg" alt="")
+                            p Услуги эвакуатора
+                    .wrapper-services-main__item
+                        .wrapper-services-main__inner
+                            img(src="images/services-page/item6.jpg" alt="")
+                            p Техническое обслуживание, ремонт прицепов.
+
+                .services-main__wrapper.wrapper-services-main
+                    .wrapper-services-main__item.hidden
+                        .wrapper-services-main__inner.wrapper-services-main__inner--mode
+                            img(src="images/services-page/item3.jpg" alt="")
+                            p Техническое обслуживание, ремонт прицепов.
+                    .wrapper-services-main__item.hidden
+                        .wrapper-services-main__inner.wrapper-services-main__inner--mode
+                            img(src="images/services-page/item4.jpg" alt="")
+                            p Техническое обслуживание, ремонт прицепов.
+                    .wrapper-services-main__item.hidden
+                        .wrapper-services-main__inner
+                            img(src="images/services-page/item5.jpg" alt="")
+                            p Услуги эвакуатора
+                    .wrapper-services-main__item.hidden
+                        .wrapper-services-main__inner
+                            img(src="images/services-page/item6.jpg" alt="")
+                            p Техническое обслуживание, ремонт прицепов.
+                    button.press-down 
+                        img(src="images/icons/arrow-down.svg" alt="")
+
+        include modules/footer.pug
+
+        //- modal
+        include modules/modal.pug
+
+    include modules/script.pug
