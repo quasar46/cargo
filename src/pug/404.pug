@@ -1,0 +1,50 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body.page-404
+
+        .main-lines-wrapper.container 
+            span 
+            span 
+            span 
+        //- first-section
+        .first-section.first-section--404
+            //- burger-menu
+            include modules/burger-menu.pug
+            //- header
+            header.header#header
+                .container 
+                    .header__wrapper.wrapper-header 
+                        include modules/main-menu.pug
+                        a(href="tel:89107401708").wrapper-header__phone +7 (910) 740-17-08
+                        button.wrapper-header__burger.burger 
+
+            //- hero
+            .hero 
+                .container
+                    h1.hero__title.hero__title--404 Error 404 <br>
+                        span страница не найдена
+                    .hero__bottom 
+                        p
+                            a(href="index.html").mode.mode--3
+                                span На главную
+                        p
+                            a.mode.mode--2#modal-show-order
+                                span Обратный звонок
+                .hero__bottom.hero__bottom--mobile.container
+                    p
+                        a(href="index.html").mode.mode--3
+                            span На главную
+                    p
+                        a.mode.mode--2#modal-show-order
+                            span Обратный звонок
+
+        //- footer
+        include modules/footer.pug
+
+        //- modal--order
+        include modules/modal-order.pug
+
+
+    include modules/script.pug
